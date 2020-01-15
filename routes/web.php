@@ -38,7 +38,7 @@ route::get('/Dashboard', function(){
 
 //    $VideosSub=Videos::with('user','channel')->get();
    
-$VideosSub=Videos::all()->first();
+$VideosSub=Videos::all();
    
    //return json_encode($VideosSub);
 
