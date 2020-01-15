@@ -13,7 +13,7 @@ class Videos extends Seeder
     {
         //
 
-        \App\driver::insert([
+        \App\Videos::insert([
             'user_id' => '1',
             'channel_id' => '1',
             'video' => 'http://player.vimeo.com/video/14592941?title=0&amp;byline=0&amp;portrait=0&amp;color=F64B39',
