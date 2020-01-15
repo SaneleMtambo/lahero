@@ -16,3 +16,19 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+route::post('/uploadNewVideo', 'VideosController@addVideo');
+
+route::post('/updateBio', 'UsersController@updateBio');
+
+route::post('/createChannel', 'ChannelController@createChannel');
+
+
+route::post('/subscibtion', 'SubscriberController@subscibtion');
+
+route::post('/unsubscibtion', 'SubscriberController@unsubscibtion');
+
+
+
+
