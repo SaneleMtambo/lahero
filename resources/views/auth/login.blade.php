@@ -57,9 +57,16 @@
                                     {{ __('Login') }}
                                 </button>
 
+
+<div style="float:center">
+                                <a class="btn btn-link" href="{{ route('register') }}">
+                                    {{ __('Register') }}
+                                </a>
+                                <br>
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     {{ __('Forgot Your Password?') }}
                                 </a>
+                                </div>
                             </div>
                         </div>
                     </form>
