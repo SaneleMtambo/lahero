@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import MediaHandler from './MediaHandler';
+import MediaHandler from '../MediaHandler';
 
 export default class App extends Component {
 
@@ -11,13 +11,13 @@ constructor(){
         hasMedia: false,
         otherUserId: null
     };
-
-    this.mediaHandler = new this.MediaHandler();
+ 
+    this.mediaHandler = new MediaHandler();
 }
 
-componentWillMount(){
+UNSAFE_componentWillMount (){
     this.mediaHandler.getPermissions()
-    .then((stream ) => {
+    .then((stream) => {
         this.setState({hasMedia: true});
 
 

@@ -14209,7 +14209,7 @@ module.exports = checkPropTypes;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(14);
-module.exports = __webpack_require__(47);
+module.exports = __webpack_require__(48);
 
 
 /***/ }),
@@ -37030,13 +37030,13 @@ var App = function (_Component) {
             otherUserId: null
         };
 
-        _this.mediaHandler = new _this.MediaHandler();
+        _this.mediaHandler = new __WEBPACK_IMPORTED_MODULE_2__MediaHandler__["a" /* default */]();
         return _this;
     }
 
     _createClass(App, [{
-        key: 'componentWillMount',
-        value: function componentWillMount() {
+        key: 'UNSAFE_componentWillMount',
+        value: function UNSAFE_componentWillMount() {
             var _this2 = this;
 
             this.mediaHandler.getPermissions().then(function (stream) {
@@ -68648,13 +68648,13 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 
 
 /***/ }),
-/* 47 */
+/* 47 */,
+/* 48 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 48 */,
 /* 49 */,
 /* 50 */,
 /* 51 */,
@@ -68673,13 +68673,13 @@ var MediaHandler = function () {
     }
 
     _createClass(MediaHandler, [{
-        key: 'getPermissions',
+        key: "getPermissions",
         value: function getPermissions() {
             return new Promise(function (res, rej) {
-                navigator.mediaDevices.getUserMedia({ video: true, audio: true }).then(function (stream) {
+                navigator.mediaDevices.getUserMedia({ audio: true, video: true }).then(function (stream) {
                     res(stream);
                 }).catch(function (err) {
-                    throw new Error('Unable to fetch stream ${err}');
+                    throw new Error("Unable to fetch stream " + err);
                 });
             });
         }
@@ -68688,7 +68688,7 @@ var MediaHandler = function () {
     return MediaHandler;
 }();
 
-/* unused harmony default export */ var _unused_webpack_default_export = (MediaHandler);
+/* harmony default export */ __webpack_exports__["a"] = (MediaHandler);
 
 /***/ })
 /******/ ]);
