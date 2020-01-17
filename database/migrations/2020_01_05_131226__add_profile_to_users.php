@@ -14,7 +14,7 @@ class AddProfileToUsers extends Migration
     public function up()
     {
            Schema::table('users', function (Blueprint $table) {
-            $table->string('profile')->nullable();
+            $table->string('profile')->default('http://tranquil-spire-68222.herokuapp.com/profilepicture/Download');
           });
     }
 

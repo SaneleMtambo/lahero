@@ -67,6 +67,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'profile' => 'https://tranquil-spire-68222.herokuapp.com/profilepicture/download',
         ]);
     }
 }

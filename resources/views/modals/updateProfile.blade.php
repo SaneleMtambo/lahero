@@ -24,7 +24,6 @@
 
 
 
-
       </div>
       <div class="modal-footer">
         <button type="close" class="button button-primary" data-dismiss="modal">Close</button>

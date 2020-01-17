@@ -135,13 +135,20 @@ route::get('/subscribedChannel/{id}', function ($id) {
 route::get('/profile', function () {
     
     
-    $Channel = App\Subscriber::all()->last();
+//     $Channel = App\Subscriber::all()->last();
 
-$subscribers= App\User::where('id',$Channel->user_id)->get();
+//     if($Channel == 1){
+
+// $subscribers= App\User::where('id',$Channel->user_id)->get();
+
+//     }else{
+        
+//         $subscribers['name'] = "you have no subscibers yet.";
     
+//     }
 //eturn json_encode($subscribers);
 
-    return view('user/profile/profile')->with(compact('subscribers'));
+    return view('user/profile/profile');
 
 });
 

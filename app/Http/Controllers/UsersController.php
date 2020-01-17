@@ -26,7 +26,7 @@ class UsersController extends Controller
 
         //using the array instead of object
     $image['filePath'] = $name;
-    $file->move(public_path().'/icon/', $name);
+    $file->move(public_path().'/profilepicture/', $name);
 
     $updatebio->profile = env('APP_URL').'/profilepicture/'. $name;
     $updatebio->description = $request->input('bio');

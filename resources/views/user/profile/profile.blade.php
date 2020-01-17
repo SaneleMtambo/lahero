@@ -25,23 +25,19 @@
 		  			   		<p>{{Auth::user()->description}}<a  data-toggle="modal" data-target="#UpdateForm">  Update your bio?</a></p>
 
 		  			   		<ul class="author-social">
-		  			   			<li><a href="facebook.com">Facebook</a></li>
-						        	<li><a href="twitter.com">Twitter</a></li>
-						        	<li><a href="google.com">GooglePlus</a></li>
-						        	<li><a href="instagram.com">Instagram</i></a></li>					        	
+		  			   			<li><a  target="_blank" href="facebook.com">Facebook</a></li>
+						        	<li><a target="_blank" href="twitter.com">Twitter</a></li>
+						        	<li><a target="_blank" href="google.com">GooglePlus</a></li>
+						        	<li><a target="_blank" href="instagram.com">Instagram</i></a></li>					        	
 		  			   		</ul>
 		  			   	</div>
 		  			   </div> <!-- end author-profile -->
 		
 						<p class="tags">
-		  			     	<span>Subscribers :</span>
+		  			     	<!-- <span>Subscribers :</span> -->
 		  				  	
 						
-								
-						@foreach($subscribers as $sub)<a href="#">{{$sub->name}}</a>@endforeach
-								<small><a>click to view more...<a></small>
-								
-								<!-- <a href="#">lectus</a><a href="#">varius</a><a href="#">turpis</a> -->
+			
 		  			   </p>
 
 		  									
@@ -59,3 +55,4 @@
 @endsection
 
 
+@include('modals/updateProfile')
