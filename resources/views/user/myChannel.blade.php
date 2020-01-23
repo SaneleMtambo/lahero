@@ -6,7 +6,7 @@
 <div class="row masonry">
 <div>
       <a class="button button-primary full-width" href="/uploadVideo">Upload</a>
-      <a class="button full-width" href="https://mychannelslivebroadcast.netlify.com/#3485594798853731">Go Live</a></div>
+      <a class="button full-width" href="https://mychannelslivebroadcast.netlify.com/#7650767897717881">Go Live</a></div>
 
       <div class="row half-bottom">
 
