@@ -6,7 +6,7 @@
 <div class="row masonry">
 <div>
 <a class="button button-primary full-width" href="/Dashboard">Home</a>
-      <a class="button full-width" href="/myBroadcast">Go Live</a></div>
+      <a class="button full-width" href="https://mychannelslivebroadcast.netlify.com/#3485594798853731">Go Live</a></div>
 
     <!-- brick-wrapper -->
   <div class="bricks-wrapper">
