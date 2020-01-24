@@ -7,7 +7,7 @@
 <div class="row masonry">
 <div>
       <a class="button button-primary full-width" href="/subscribedChannel/{{Auth::User()->id}}">Subscribed Channels</a>
-      <a class="button full-width" href="/liveBroadcast">Live</a></div>
+      <a class="button full-width" href="https://mychannelslivebroadcast.netlify.com/#7650767897717881">Live</a></div>
 
     <!-- brick-wrapper -->
   <div class="bricks-wrapper">
