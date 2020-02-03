@@ -55,12 +55,12 @@
 <div class="row header-content">
 
     <div class="logo">
-      <a href="/Dashboard">Author</a>
+      <a href="/">Author</a>
    </div>
 
     <nav id="main-nav-wrap">
          <ul class="main-navigation sf-menu">
-             <li class="current"><a href="/Dashboard" title="">Home</a></li>									
+             <li class="current"><a href="/" title="">Home</a></li>									
              
              <li class="has-children">
              <li class="nav-item">

@@ -20,7 +20,12 @@ use App\Subscriber;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+
+
+    $Videos=Videos::with('user','channel')->get();
+
+
+    return view('dashboard/dashboardfront')->with(compact('Videos'));;
 });
 
 Auth::routes();
